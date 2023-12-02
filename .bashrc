@@ -79,4 +79,6 @@ gitBranch() {
 
 export PS1="${pathC}\w ${gitC}\$(gitBranch) ${pointerC}\$${normalC} "
 
-eval "$(starship init bash)"
+eval "$(starship init bash)"eval "$(/bin/brew shellenv)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
