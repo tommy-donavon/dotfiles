@@ -1,6 +1,6 @@
 #!/bin/bash
 
-setenv SCRIPTDIR `dirname $0`
+SCRIPTDIR=$(dirname $0)
 
 $SCRIPTDIR/aptinstall.sh
 $SCRIPTDIR/programs.sh

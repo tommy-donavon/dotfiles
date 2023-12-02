@@ -1,8 +1,8 @@
 #!/bin/bash
 
-setenv SCRIPTDIR `dirname $0`
+SCRIPTDIR=$(dirname $0)
 
-$SCRIPTDIR/docker.sh
-$SCRIPTDIR/hashicorp.sh
-$SCRIPTDIR/helm.sh
-$SCRIPTDIR/kubectl.sh
+$SCRIPTDIR/programs/docker.sh
+$SCRIPTDIR/programs/hashicorp.sh
+$SCRIPTDIR/programs/helm.sh
+$SCRIPTDIR/programs/kubectl.sh

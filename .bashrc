@@ -6,8 +6,8 @@ HISTFILESIZE=2000
 # append to the history file instead of overwrite
 shopt -s histappend
 
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+if [ -f ~/.bash_alias ]; then
+    . ~/.bash_alias
 fi
 
 # Markdown link check in a folder, recursive
@@ -16,6 +16,8 @@ function mlc () {
 }
 
 export EDITOR=/usr/bin/nvim
+
+export PATH="${HOME}/.local/share/bob/nvim-bin:${PATH}"
 
 # Bash completion
 source ~/.git-completion.bash

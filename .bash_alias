@@ -35,3 +35,6 @@ alias tga="terragrunt apply"
 alias tgf="terragrunt hclfmt"
 
 alias kc="kubectl"
+
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
