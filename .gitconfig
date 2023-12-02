@@ -1,0 +1,64 @@
+[user]
+  name = tommy-donavon
+  email = donavontommy@gmail.com
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = false
+
+[alias]
+  s = status -sb
+  d = diff
+  a = add
+  aa = add -A
+  b = branch
+  co = checkout
+  cob = checkout -b
+  c = commit
+  cm = commit -m
+  plog = log --graph --pretty=format:'%C(bold blue)%h%Creset - %C(yellow)%d%Creset %s %C(cyan dim)(%cr)%Creset %n' --abbrev-commit --branches
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[color "status"]
+    added = green
+    changed = blue
+    untracked = red 
+
+[color "diff"]
+    meta = yellow
+    old = red 
+    new = green
+
+[commit]
+    template = ~/.gitmessage
+
+[core]
+  excludesfile = ~/.config/git/gitignore_global
+  editor = nvim
+
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
+[delta]
+  line-numbers = true
+  side-by-side = true
+  navigate = true    # use n and N to move between diff sections
+  light = false      
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
