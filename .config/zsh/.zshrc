@@ -23,10 +23,29 @@ export PATH="${GOBIN}:${PATH}"
 # starship
 eval "$(starship init zsh)"
 
-# pnpm
 export PNPM_HOME="${HOME}/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+export CARGO_HOME="${HOME}/.cargo/bin"
+case ":$PATH:" in
+  *":$CARGO_HOME:"*) ;;
+  *) export PATH="$CARGO_HOME:$PATH" ;;
+esac
+
+export ZIG_HOME="${HOME}/zig"
+case ":$PATH:" in
+  *":$ZIG_HOME:"*) ;;
+  *) export PATH="$ZIG_HOME:$PATH" ;;
+esac
+
+export CODEQL_HOME="${HOME}/codeql"
+case ":$PATH:" in
+  *":$CODEQL_HOME:"*) ;;
+  *) export PATH="$CODEQL_HOME:$PATH" ;;
+esac
+
+# bun completions
+[ -s "/Users/tommy.donavon/.bun/_bun" ] && source "/Users/tommy.donavon/.bun/_bun"
