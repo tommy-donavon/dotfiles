@@ -46,6 +46,7 @@ brew "zsh"
 brew "zsh-completions"
 
 cask "1password-cli"
+cask "alacritty"
 cask "anaconda"
 cask "caffeine"
 cask "font-fira-code-nerd-font"
