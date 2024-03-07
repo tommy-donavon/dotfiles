@@ -30,6 +30,7 @@ separator = "│"
 
 [editor.file-picker]
 hidden = false
+git-ignore = false
 
 [editor.soft-wrap]
 enable = true
