@@ -2,4 +2,6 @@
 .gitignore
 .gitmodules
 install.sh
+lazygit
+lazygit.tar.gz
 os

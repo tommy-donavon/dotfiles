@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo add-apt-repository -y ppa:ansible/ansible
+sudo add-apt-repository -y ppa:maveonair/helix-editor
+sudo add-apt-repository -y ppa:aslatter/ppa
 sudo apt update
 
 function install {
@@ -12,30 +14,32 @@ function install {
     echo "Already installed: ${1}"
   fi
 }
-# basics
+
+
+install alacritty
 install ansible
 install apt-transport-https
-install ca-certificates
-install curl
-install gnupg-agent
-install software-properties-common
 install awscli
+install bash-completion
+install ca-certificates
 install chromium-browser
 install curl
+install curl
 install exfat-utils
+install figlet
 install file
 install git
+install gnupg-agent
+install helix
+install helm
 install htop
+install jq
+install lolcat
+install neovim
 install nmap
 install openvpn
+install software-properties-common
+install stow
 install tmux
 install vim
-install neovim
-install helm
-install jq
-install stow
 install zsh
-install bash-completion
-
-install figlet
-install lolcat

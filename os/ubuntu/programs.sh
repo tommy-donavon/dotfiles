@@ -6,3 +6,4 @@ $SCRIPTDIR/programs/docker.sh
 $SCRIPTDIR/programs/hashicorp.sh
 $SCRIPTDIR/programs/helm.sh
 $SCRIPTDIR/programs/kubectl.sh
+$SCRIPTDIR/programs/lazygit.sh

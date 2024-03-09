@@ -38,3 +38,5 @@ zsdoc/data
 
 # Zunit tests' output
 /tests/_output/*
+lazygit.tar.gz
+lazygit
