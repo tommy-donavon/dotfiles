@@ -5,6 +5,13 @@
  [[language]]
  name = "rust"
 
+ [[language]]
+ name = "graphql"
+ language-id = "graphql"
+ language-servers = ["graphql-lsp"]
+ file-types = ["graphql", "graphqls", "gql", "gqls"]
+ auto-format = true
+
  [language-server.gpt]
  command = "bun"
  environment = { HANDLER= "codeium"}
@@ -34,6 +41,10 @@
  language-servers = [  "typescript-language-server", "tailwindcss-react", "eslint", "emmet-ls", "scls", "graphql", "gpt"]
  formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
  indent = { tab-width = 4, unit = "\t" }
+ auto-format = true
+
+ [[language]]
+ name = "bash"
  auto-format = true
 
  [[language]]
@@ -193,3 +204,14 @@
  includeInlayParameterNameHintsWhenArgumentMatchesName = true
  includeInlayPropertyDeclarationTypeHints = true
  includeInlayVariableTypeHints = true
+
+[[language]]
+name = "svelte"
+auto-format = true
+formatter = { command = 'prettier', args = ["--plugin", "prettier-plugin-svelte", "--stdin"] }
+
+[[language]]
+name = "python"
+language-servers = ["pyright"]
+auto-format = true
+formatter = {command = "black", args = ["--quiet", "-"]}

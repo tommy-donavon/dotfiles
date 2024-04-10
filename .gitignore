@@ -38,3 +38,4 @@ zsdoc/data
 
 # Zunit tests' output
 /tests/_output/*
+.config/zellij/plugins
